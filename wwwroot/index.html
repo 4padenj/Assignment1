@@ -1,12 +1,110 @@
-﻿<!DOCTYPE html>
+﻿<!-- Assignment 1: Paden Jorgensen
+    index.html - main page of the assignment-->
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <title>Paden's ASP.Net App</title>
-
+    <!-- Bootstrap CSS (inside css folder, NOT a cdn link): NOTE: After I had already used Bootstrap, I realized that Bootstrap was on the list of DO NOT USE. So I just commented it out. -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet" />-->
+    <link href="css/styles.css" rel="stylesheet" />
 
 </head>
 <body>
+    <div class="jumbotron">
+        <h1>Paden Jorgensen</h1>
+        <h6>You can call me Paden</h6>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="p-5">
+                    <img class="img-fluid rounded" src="img/rafting.JPG" />
+                </div>
 
+            </div>
+            <div class="col-sm-6">
+                <div class="p-5">
+                    <h4>
+                        My Hopes for 413
+                    </h4>
+                    <p>
+                        I look forward to understanding the fundamentals, tips, and tricks of MVC development. I'm excited to practice my development skills and expand them to include C#.
+                        I'm also stoked to get more familiar with Visual Studio; it's an amazing IDE. By far the most exciting for me is a chance to get into REACT. I hope we have time for it.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="p-5">
+                    <h4>My Top 3 Career Choices after Graduation</h4>
+                    <ol>
+                        <li>CTO of a start-up I help to co-found</li>
+                        <li>Software Development Team Lead</li>
+                        <li>Professor of Innovation</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="p-5">
+                    <form>
+                        <fieldset>
+                            <h3>Percentage of Grade Category</h3>
+                            <h6>Enter a percentage(ie: 93), number only</h6>
+                            <label class="form-check-label">
+                                Assignments
+                            </label>
+                            <input class="form-check-input" id="asgn" /><br />
+                            <label class="form-check-label">
+                                Group Project
+                            </label>
+                            <input class="form-check-input" id="gp"/><br />
+                            <label class="form-check-label">
+                                Quizzes
+                            </label>
+                            <input class="form-check-input" id="qz"/><br />
+                            <label class="form-check-label">
+                                Exams
+                            </label>
+                            <input class="form-check-input" id="ex"/><br />
+                            <label class="form-check-label">
+                                INTEX
+                            </label>
+                            <input class="form-check-input" id="in"/><br />
+
+                            <button type="button" id="submit">See Score</button>
+                            <div class="Score-Display">
+                                <h3>Grade: <span id="totalScore"></span>&#x09;&#x09;<span id="letterGrade"></span></h3>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Here is a comment -->
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
+
+<!--
+    Build an ASP.NET Web App using the same structure as in the "Building First Web App" series of videos. (i.e. Non-MVC)
+
+Include:
+
+Title
+Header that lists your preferred name
+A picture of yourself doing something you enjoy
+A paragraph on what you hope to get out of this IS 413 class
+A list of the Top #3 jobs you are most interested in pursuing when you graduate
+A "Grade Calculator" form that takes as input a percentage of each grade category listed in the syllabus
+An icon for the website (displayed on the tab next to the title) (#notcoveredinthevideos)
+Style the site using a CSS file.  Level of styling is up to you, but only CSS for now.  
+    (No Bootstrap, Angular, etc. on this assignment. We'll get there!)
+
+Build a JavaScript program that calculates and displays both a final percentage and a letter grade using the "Grade Calculator" form entries based on the weights listed in the syllabus.
+
+As always, write good code (use indentation, commenting, whitespace, descriptive variable names, etc.)
+
+Submit a link to the GitHub Repository containing your project. (NOTE:  Make sure the repository is Public so the TAs can access it.)-->
